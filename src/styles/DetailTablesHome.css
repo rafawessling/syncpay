@@ -1,0 +1,186 @@
+.container-table {
+    background-color: #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 4px 4px rgba(172, 217, 197, 0.25);
+}
+
+.charges-table-home {
+    max-width: 25.6vw;
+    max-height: 40rem;
+}
+
+.clients-table-home {
+    max-width: 39.3vw;
+    max-height: 40rem;
+    margin-top: 2rem;
+
+    white-space: nowrap;
+}
+
+.detail-tables-home .MuiTable-root,
+.detail-tables-home .MuiTableCell-root {
+    padding: 0 0 0 2.2rem;
+    white-space: nowrap;
+}
+
+.count-tables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5.2rem;
+    height: 2.1rem;
+    margin-left: 1.5rem;
+
+    font-family: var(--secondary-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 130%;
+
+    border-radius: 0.8rem;
+}
+
+.count-tables-clients {
+    margin-left: 5.5rem;
+}
+
+.paidTable,
+.correct {
+    color: #1fa7af;
+    background-color: #eef6f6;
+}
+
+.overdueTable,
+.defaulter {
+    color: #971d1d;
+    background-color: #ffefef;
+}
+
+.upcomingTable {
+    color: #c5a605;
+    background-color: #fcf6dc;
+}
+
+.container-detail-tables-title {
+    height: 5.6rem;
+}
+
+.detail-tables-title {
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 130%;
+
+    color: #3f3f55;
+}
+
+.container-detail-tables-header {
+    height: 5.2rem;
+}
+
+.detail-tables-header {
+    padding: 0;
+
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0.08px;
+
+    color: #3f3f55;
+}
+
+.container-detail-tables-data {
+    height: 4.6rem;
+}
+
+.detail-tables-data {
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.07px;
+
+    color: #6e6e85;
+}
+
+.MuiTableCell-root.cell-detail-tables-charge-id {
+    max-width: 12rem;
+}
+
+.detail-tables-charge-id {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.view-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 3.6rem;
+
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+
+    text-decoration-line: underline;
+    color: #da0175;
+    cursor: pointer;
+}
+
+@media (min-width: 1450px) {
+    .clients-table-home {
+        max-width: 40vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .charges-table-home {
+        max-width: 25vw;
+    }
+
+    .clients-table-home {
+        max-width: 38.2vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container-table {
+        max-width: 80vw;
+    }
+
+    .clients-table-home {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-table,
+    .charges-table-home,
+    .clients-table-home {
+        max-width: 85vw;
+    }
+}
+
+@media (min-height: 1000px) {
+    .charges-table-home,
+    .clients-table-home {
+        margin-top: 3.5rem;
+    }
+
+    .container-detail-tables-header {
+        height: 5.8vh;
+    }
+
+    .container-detail-tables-data {
+        height: 4.2vh;
+    }
+
+    .view-all {
+        height: 5vh;
+    }
+}

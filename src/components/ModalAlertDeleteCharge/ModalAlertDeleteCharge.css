@@ -1,0 +1,50 @@
+.text-confirm-delete-charge {
+    margin: 1.3rem 1.8rem 2.8rem;
+
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 130%;
+    text-align: center;
+
+    color: #cc7800;
+}
+
+.btns-delete-charge {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.MuiButton-contained.btn-delete-charge-no,
+.MuiButton-contained.btn-delete-charge-yes {
+    width: 10rem;
+    height: 2.4rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    border: none;
+    box-shadow: none;
+    border-radius: 0.4rem;
+}
+
+.MuiButton-contained.btn-delete-charge-no {
+    color: #ae1100;
+    background-color: #f2d6d0;
+
+    &:hover {
+        background-color: #f2d6d0;
+    }
+}
+
+.MuiButton-contained.btn-delete-charge-yes {
+    color: #034a2a;
+    background-color: #acd9c5;
+
+    &:hover {
+        background-color: #acd9c5;
+    }
+}

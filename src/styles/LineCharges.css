@@ -1,0 +1,94 @@
+.container-detail-charges-data {
+    height: 5.8rem;
+    white-space: nowrap;
+}
+
+.detail-tables-data.empty-text {
+    width: 100%;
+    text-align: center;
+}
+
+.container-detail-charges-data-client {
+    white-space: nowrap;
+}
+
+.content-charges-client-cell.MuiTableCell-root {
+    padding: 1rem;
+}
+
+.icons.MuiTableCell-root {
+    padding: 1rem 0;
+}
+
+.detail-client-name {
+    width: 15rem;
+}
+
+.detail-charge-id {
+    cursor: pointer;
+}
+
+.charge-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    height: 2rem;
+    padding: 0 0.8rem;
+    border-radius: 0.8rem;
+
+    font-weight: 600;
+}
+
+.status-overdue {
+    background-color: #ffefef;
+    color: #971d1d;
+}
+
+.status-pending {
+    background-color: #fcf6dc;
+    color: #c5a605;
+}
+
+.status-paid {
+    background-color: #eef6f6;
+    color: #1fa7af;
+}
+
+.container-charge-description.MuiTableCell-root {
+    max-width: 12vw;
+}
+
+.container-charge-description-client.MuiTableCell-root {
+    max-width: 20vw;
+}
+
+.charge-description {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.edit-charge-icon,
+.remove-charge-icon {
+    margin-left: 2.4rem;
+    cursor: pointer;
+}
+
+.remove-icon-charges-page {
+    margin-right: 2.4rem;
+}
+
+@media (min-height: 900px) {
+    .container-detail-charge-data {
+        height: 6.5vh;
+    }
+}
+
+@media (min-height: 768px) {
+    .container-detail-charge-data {
+        height: 6.3vh;
+    }
+}

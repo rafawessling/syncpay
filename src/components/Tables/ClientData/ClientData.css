@@ -1,0 +1,58 @@
+.first-client-data {
+    max-width: 50%;
+    margin-bottom: 3.5vh;
+}
+
+.btn-edit-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 25.2rem;
+    height: 3.3rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    border: 1px solid #dedee9;
+    background-color: #f8f8f9;
+    color: #0e8750;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #f8f8f9;
+    }
+}
+
+.col-1-client-data {
+    width: 43%;
+}
+
+.col-2-client-data {
+    width: 30%;
+}
+
+.col-1-client-address {
+    width: 22%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.col-2-client-address {
+    width: 15.5%;
+}
+
+@media (max-width: 768px) {
+    .btn-edit-client {
+        width: 95%;
+        padding: 0.25rem 0;
+    }
+
+    .first-client-data {
+        margin-top: 2.2rem;
+    }
+}

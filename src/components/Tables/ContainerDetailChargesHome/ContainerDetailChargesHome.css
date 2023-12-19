@@ -1,0 +1,19 @@
+.conteiner-tables-charges-home {
+    display: flex;
+    justify-content: space-between;
+
+    width: 87%;
+}
+
+@media (max-width: 1000px) {
+    .conteiner-tables-charges-home {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteiner-tables-charges-home {
+        width: 85vw;
+    }
+}

@@ -1,0 +1,19 @@
+.main-client-details {
+    display: flex;
+
+    background-color: #f8f8f9;
+}
+
+.container-content-client-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: calc(100vw - 10.8rem);
+}
+
+@media (max-width: 768px) {
+    .container-content-client-details {
+        width: 88vw;
+    }
+}

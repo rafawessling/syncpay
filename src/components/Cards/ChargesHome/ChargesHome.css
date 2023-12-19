@@ -1,0 +1,140 @@
+.content-cards-home .paid,
+.content-cards-home .overdue,
+.content-cards-home .upcoming {
+    width: 26.2vw;
+    height: 8.8rem;
+
+    box-shadow: none;
+    border-radius: 3rem;
+}
+
+.content-cards-home .paid {
+    background-color: #eef6f6;
+}
+
+.content-cards-home .overdue {
+    background-color: #ffefef;
+}
+
+.content-cards-home .upcoming {
+    background-color: #fcf6dc;
+}
+
+.cards-home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cards-home img {
+    height: 3.3rem;
+}
+
+.text-card-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.1rem;
+
+    width: 20rem;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    line-height: 130%;
+
+    color: #3f3f55;
+}
+
+.text-card-home h3 {
+    font-size: 1.6rem;
+}
+
+.text-card-home span {
+    font-size: 2rem;
+}
+
+@media (min-width: 1440px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming,
+    .cards-home {
+        max-width: 25.7vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming,
+    .cards-home {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming {
+        height: 12rem;
+    }
+
+    .cards-home {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming {
+        width: 85vw;
+        height: 11vh;
+    }
+
+    .cards-home {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-card-home h3 {
+        font-size: 1.8rem;
+    }
+
+    .text-card-home span {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming {
+        width: 85vw;
+    }
+
+    .text-card-home h3 {
+        font-size: 1.7rem;
+    }
+
+    .text-card-home span {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-height: 1000px) {
+    .content-cards-home .paid,
+    .content-cards-home .overdue,
+    .content-cards-home .upcoming,
+    .cards-home {
+        height: 10.3vh;
+    }
+
+    .text-card-home h3 {
+        font-size: 1.8rem;
+    }
+
+    .text-card-home span {
+        font-size: 2.4rem;
+    }
+}

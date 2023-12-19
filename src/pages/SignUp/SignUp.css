@@ -1,0 +1,246 @@
+.signup-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.information-side {
+    display: flex;
+    justify-content: center;
+
+    width: 35%;
+
+    background-color: #f0f0f5;
+}
+
+.information-square {
+    display: flex;
+    gap: 1rem;
+
+    width: 80%;
+    height: fit-content;
+    margin-top: 10rem;
+}
+
+.steps {
+    text-align: center;
+    width: min-content;
+}
+
+.information-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.8rem;
+}
+
+.group-texts-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.title-texts-steps,
+.text-steps {
+    font-size: 1.8rem;
+    line-height: 130%;
+}
+
+.title-texts-steps {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    color: #0e8750;
+}
+
+.text-steps {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #3f3f55;
+}
+
+.form-side-register {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    background-color: #f8f8f9;
+}
+
+.form-side-square-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: 100%;
+}
+
+.slide-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    width: 33.4rem;
+}
+
+.title-forms-register {
+    margin-bottom: 1.2rem;
+
+    font-family: var(--secondary-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+
+    color: #343447;
+}
+
+.text-redirect-login {
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 130%;
+
+    color: #3f3f55;
+}
+
+.text-redirect-login span {
+    font-weight: 600;
+
+    text-decoration-line: underline;
+    color: #da0175;
+}
+
+.container-finish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.square-finish-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+
+    width: 60rem;
+    height: 51.2rem;
+
+    border-radius: 3rem;
+    background-color: #f0f0f5;
+}
+
+.success-icon {
+    width: 10.4rem;
+}
+
+.text-finish-register {
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 130%;
+
+    color: #343447;
+}
+
+@media (max-width: 1150px) {
+    .information-side {
+        width: 40vw;
+    }
+
+    .square-finish-register {
+        max-width: 50vw;
+    }
+
+    .text-finish-register {
+        max-width: 45vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .information-side {
+        width: 45vw;
+    }
+
+    .information-square {
+        width: 85%;
+    }
+
+    .information-texts {
+        gap: 3.3rem;
+    }
+
+    .title-texts-steps,
+    .text-steps {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column-reverse;
+    }
+
+    .information-side {
+        padding: 3rem 0;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .information-square {
+        margin-top: 0;
+    }
+
+    .title-texts-steps,
+    .text-steps {
+        font-size: 1.8rem;
+    }
+
+    .form-side-register {
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+
+        height: 70vh;
+
+        background-color: #f8f8f9;
+    }
+
+    .square-finish-register {
+        max-width: 90vw;
+        max-height: 42vh;
+        margin-bottom: 1.5rem;
+    }
+
+    .text-finish-register {
+        max-width: 68vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .information-side {
+        height: 35vh;
+        padding: 1.58em 0;
+    }
+
+    .information-square {
+        width: 90%;
+    }
+
+    .form-side-register {
+        height: 65vh;
+    }
+
+    .title-texts-steps {
+        font-size: 1.6rem;
+    }
+
+    .text-steps {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,151 @@
+.container-header-dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 87%;
+    height: 4.6rem;
+    margin: 2.8rem 0;
+}
+
+.left-side-header,
+.right-side-header {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.title-header-dashboard {
+    font-family: var(--secondary-font);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 130%;
+
+    color: #3f3f55;
+}
+
+.MuiButton-contained.btn-add-client {
+    width: 32rem;
+    height: 3.3rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    background-color: #da0175;
+    color: #f8f8f9;
+    border-radius: 1rem;
+
+    &:hover {
+        background-color: #da0175;
+    }
+}
+
+.filter-search-section {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.container-filter-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 1rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.search-field {
+    display: flex;
+    justify-content: center;
+
+    width: 32rem;
+    height: 4rem;
+
+    border-radius: 1rem;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(218, 1, 117, 0.05);
+}
+
+.search-field .MuiOutlinedInput-notchedOutline {
+    max-width: 35rem;
+    height: 4rem;
+
+    border: none;
+}
+
+.search-field .MuiOutlinedInput-input {
+    padding: 0 1rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+
+    color: #747488;
+}
+
+.search-field .MuiInputLabel-root {
+    margin-top: -0.8rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    color: #747488;
+}
+
+@media (max-width: 1200px) {
+    .MuiButton-contained.btn-add-client {
+        width: 25vw;
+    }
+
+    .search-field {
+        width: 25vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .MuiButton-contained.btn-add-client {
+        width: 20vw;
+    }
+
+    .search-field {
+        width: 20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-header-dashboard {
+        margin: 1.8rem 0;
+        width: 85vw;
+    }
+
+    .container-header-dashboard,
+    .right-side-header {
+        flex-direction: column;
+        margin: 1rem 0;
+    }
+
+    .left-side-header {
+        align-self: flex-start;
+    }
+
+    .MuiButton-contained.btn-add-client {
+        width: 85vw;
+        margin: 1rem 0 0 0;
+    }
+
+    .filter-search-section {
+        width: 85vw;
+    }
+
+    .search-field {
+        flex-grow: 1;
+    }
+}

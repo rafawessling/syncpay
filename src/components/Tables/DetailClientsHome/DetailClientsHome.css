@@ -1,0 +1,13 @@
+.title-clients-table-home {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.client-name-table {
+    min-width: 18rem;
+}
+
+.client-id-table {
+    min-width: 9rem;
+}

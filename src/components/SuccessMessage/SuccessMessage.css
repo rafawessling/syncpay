@@ -1,0 +1,52 @@
+.MuiAlert-root.success-message {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    bottom: 6.6rem;
+    right: 6.5%;
+    width: 33rem;
+    height: 5.4rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    color: #243f80;
+    background-color: #c3d4fe;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 42px 0px rgba(0, 0, 0, 0.2);
+}
+
+.success-message {
+    display: none;
+    position: absolute;
+}
+
+.success-message.show-success {
+    display: flex;
+    gap: 1rem;
+}
+
+.close-success-message {
+    width: 1.6rem;
+    height: 1.6rem;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 1.8rem;
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .MuiAlert-root.success-message {
+        right: 7.5vw;
+    }
+}
+
+@media (max-width: 430px) {
+    .MuiAlert-root.success-message {
+        right: 1.5vw;
+    }
+}

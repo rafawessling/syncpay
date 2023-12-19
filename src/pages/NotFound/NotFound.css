@@ -1,0 +1,76 @@
+.container-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: var(--primary-font);
+}
+
+.container-not-found img {
+    width: 50vw;
+    margin-bottom: 2rem;
+}
+
+.error-404 {
+    font-size: 18rem;
+    color: #da0175;
+}
+
+.title-not-found {
+    text-align: center;
+    font-size: 5rem;
+    color: #343447;
+}
+
+.text-not-found {
+    font-size: 2rem;
+}
+
+.btn-not-found {
+    width: 16rem;
+    padding: 0.8rem 0;
+    margin-top: 8rem;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    color: #f8f8f9;
+    background-color: #da0175;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .container-not-found {
+        margin-top: 3rem;
+    }
+
+    .container-not-found img {
+        width: 75vw;
+    }
+
+    .title-not-found {
+        max-width: 85vw;
+        margin-bottom: 1.5rem;
+        font-size: 4rem;
+    }
+
+    .text-not-found {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-not-found img {
+        width: 90vw;
+    }
+
+    .title-not-found {
+        font-size: 3.6rem;
+    }
+}

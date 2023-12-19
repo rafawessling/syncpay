@@ -1,0 +1,312 @@
+.container-modal-register,
+.container-modal-update-user,
+.container-modal-delete-charge,
+.container-modal-charge-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 60rem;
+
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    border: none;
+    background-color: #ffffff;
+    border-radius: 3rem;
+}
+
+.container-modal-update-user {
+    width: 49rem;
+    height: 62.3rem;
+}
+
+.container-modal-delete-charge {
+    height: 40rem;
+}
+
+.container-modal-register.client {
+    height: 78.3rem;
+}
+
+.container-modal-register.charge {
+    height: 75.4rem;
+}
+
+.container-modal-charge-detail {
+    align-items: flex-start;
+    height: 46.1rem;
+    padding: 4rem 5.5rem;
+}
+
+.close-icon-modal {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+
+    cursor: pointer;
+}
+
+.title-modal-register,
+.title-modal-charge-detail {
+    display: flex;
+    align-items: center;
+}
+
+.title-modal-register {
+    width: 82%;
+}
+
+.title-modal-register.charge,
+.title-modal-charge-detail {
+    gap: 2rem;
+    margin-bottom: 2.3rem;
+}
+
+.title-modal-register > h2,
+.title-modal-update-user,
+.title-modal-charge-detail > h2 {
+    font-family: var(--secondary-font);
+    line-height: 130%;
+}
+
+.title-modal-register > h2,
+.title-modal-charge-detail > h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+
+    color: #3f3f55;
+}
+
+.title-modal-update-user {
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    color: #343447;
+}
+
+.form-register,
+.form-update-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.form-register {
+    width: 82%;
+    margin-top: 1.6rem;
+}
+
+.form-update-user {
+    width: 78%;
+    margin-top: 3.2rem;
+}
+
+.form-group-register,
+.form-group-update-user,
+.container-password-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.6rem;
+
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 7rem;
+}
+
+.container-small-input-register,
+.container-small-input-update-user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.4rem;
+
+    width: 100%;
+}
+
+.small-section {
+    flex-direction: column;
+}
+
+.small-input-register,
+.small-input-update-user {
+    display: flex;
+    flex-direction: column;
+
+    width: 48%;
+}
+
+.small-input-update-user {
+    width: 47%;
+}
+
+.section-error-small-input,
+.section-error-cep {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: -0.6rem;
+}
+
+.error-small-input {
+    width: 47%;
+}
+
+.input-city {
+    width: 65%;
+}
+
+.input-uf {
+    width: 30%;
+}
+
+.input-password {
+    display: flex;
+    align-items: center;
+
+    transition: 0.2s ease-in-out;
+    border-radius: 0.8rem;
+    border: 1px solid #d0d5dd;
+}
+
+.input-password > img {
+    width: 2.2rem;
+    margin-left: -3rem;
+
+    cursor: pointer;
+}
+
+.hide-password {
+    scale: 1.1;
+}
+
+.form-group-register > label,
+.form-group-update-user > label {
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+
+    color: #3f3f55;
+}
+
+.form-group-register > input,
+.form-group-update-user > input,
+.input-password > input {
+    height: 4.4rem;
+    padding: 0 1rem;
+
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    color: #9b9bb2;
+    border-radius: 0.8rem;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    border: 1px solid #d0d5dd;
+}
+
+.input-password > input {
+    width: 100%;
+    border: none;
+}
+
+.container-btns-register {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2.5rem;
+}
+
+.container-btns-register,
+.MuiButton-contained.btn-submit-update-user {
+    width: 100%;
+    height: 3.4rem;
+}
+
+.MuiButton-contained.btn-submit-update-user {
+    margin-top: 1.4rem;
+}
+
+.MuiButton-contained.btn-cancel-register,
+.MuiButton-contained.btn-submit-register,
+.MuiButton-contained.btn-submit-update-user {
+    width: 47.5%;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+
+    border-radius: 1rem;
+    border: none;
+    box-shadow: none;
+}
+
+.MuiButton-contained.btn-submit-update-user {
+    width: 40%;
+}
+
+.MuiButton-contained.btn-submit-register,
+.MuiButton-contained.btn-submit-update-user {
+    color: #f8f8f9;
+    background-color: #da0175;
+
+    &:hover {
+        background-color: #da0175;
+    }
+}
+
+.MuiButton-contained.btn-cancel-register {
+    color: #0e8750;
+    border: 1px solid #dedee9;
+    background-color: #f8f8f9;
+
+    &:hover {
+        background-color: #f8f8f9;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-modal-register,
+    .container-modal-update-user, .container-modal-delete-charge, .container-modal-charge-detail  {
+        width: 100vw;
+        left: 50%;
+
+        border: none;
+        background-color: #ffffff;
+        border-radius: 3rem;
+    }
+
+    .container-modal-register,
+    .container-modal-update-user {
+        height: 75.8rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-small-input-register {
+        gap: 1.4rem;
+    }
+
+    .container-small-input-update-user {
+        gap: 1.7rem;
+    }
+
+    .close-icon-modal {
+        top: 4.5rem;
+    }
+
+    .container-btns-register {
+        margin-top: 2.5rem;
+    }
+}

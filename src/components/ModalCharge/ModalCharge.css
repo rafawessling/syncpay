@@ -1,0 +1,48 @@
+.container-status-charge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem 0 12rem 0;
+}
+
+.container-status-charge .MuiFormControlLabel-root {
+    height: 4.8rem;
+    margin: 0 0 0.8rem 0;
+    padding: 1.2rem;
+
+    border-radius: 1rem;
+    background: #f0f0f5;
+}
+
+.container-status-charge .MuiTypography-root {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    color: #3f3f55;
+}
+
+.form-description-charge {
+    height: 11.2rem;
+}
+
+.form-description-charge > input {
+    height: 100%;
+    position: relative;
+}
+
+.form-description-charge input::placeholder {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.error-register-charge {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.error-register-charge > p {
+    width: 47%;
+}

@@ -1,0 +1,36 @@
+.container-filter-not-found {
+    height: 60vh;
+    max-width: 87%;
+}
+
+.content-filter-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.image-filter-not-found {
+    margin: -5rem 2.2rem 0 0;
+}
+
+.text-filter-not-found,
+.small-text-filter-not-found {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    margin-right: 2.2rem;
+}
+
+.text-filter-not-found {
+    font-size: 2.8rem;
+    color: #f08889;
+    margin: 1rem 2.2rem 1.6rem 0;
+}
+
+.small-text-filter-not-found {
+    margin-bottom: 5rem;
+    font-size: 2.4rem;
+    color: #9b9bb2;
+}

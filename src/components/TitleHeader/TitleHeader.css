@@ -1,0 +1,61 @@
+.charges-summary {
+    margin-top: 2.6rem;
+    margin-left: 5%;
+
+    font-family: var(--secondary-font);
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 130%;
+
+    color: #343447;
+}
+
+.clients,
+.charges,
+.title-client-details {
+    margin-top: 5.5rem;
+    margin-left: 5%;
+
+    font-family: var(--tertiary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    color: #0e8750;
+}
+
+.clients,
+.title-client-details {
+    display: flex;
+    margin-left: 4.5vw;
+
+    gap: 1.6rem;
+}
+
+.highlight-title-header {
+    display: flex;
+    gap: 1.6rem;
+
+    text-wrap: nowrap;
+
+    color: #747488;
+}
+
+@media (max-width: 530px) {
+    .charges-summary {
+        margin-top: 0;
+        margin-left: 2%;
+
+        font-size: 2rem;
+    }
+
+    .title-client-details {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 2.2rem;
+    }
+
+    .highlight-title-header {
+        gap: 0.8rem;
+    }
+}

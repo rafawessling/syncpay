@@ -1,0 +1,105 @@
+.container-charges-table,
+.container-charges-detail-client,
+.container-client-data {
+    max-width: 87%;
+
+    position: relative;
+    overflow: auto;
+
+    background-color: #fff;
+}
+
+.container-charges-table {
+    max-height: 73.2vh;
+}
+
+.container-charges-detail-client {
+    max-height: 38.2vh;
+}
+
+.container-client-data {
+    height: 30vh;
+    margin-bottom: 2.6vh;
+}
+
+.detail-charge-table .MuiTable-root,
+.detail-charge-table .MuiTableCell-root {
+    padding: 0 0 0 2.2rem;
+    white-space: nowrap;
+}
+
+.container-detail-header {
+    height: 7rem;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+.header-client-details {
+    top: 7rem;
+}
+
+.content-client-data-header.MuiTableCell-root,
+.content-client-data-cell.MuiTableCell-root {
+    padding: 0rem 1rem;
+    border-bottom: none;
+}
+
+.client-data-header,
+.client-data-body {
+    max-height: 3.5rem;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.content-charges-client-header.MuiTableCell-root {
+    padding: 0rem 1rem 1.4rem;
+}
+
+.cell-with-icon {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-height: 910px) {
+    .container-detail-clients-header {
+        height: 7vh;
+    }
+
+    .container-client-data {
+        height: 28vh;
+        margin-bottom: 2.6vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-clients-table {
+        max-width: 85vw;
+        max-height: 69.5vh;
+        margin-top: 10rem;
+    }
+
+    .container-charges-table {
+        max-width: 85vw;
+        margin-top: 4rem;
+    }
+
+    .container-detail-clients-header {
+        height: 6vh;
+    }
+
+    .container-charges-detail-client,
+    .container-client-data {
+        max-width: 85vw;
+        height: 33vh;
+    }
+
+    .header-client-details {
+        top: 8.8rem;
+    }
+}

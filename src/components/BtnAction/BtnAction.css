@@ -1,0 +1,25 @@
+.btn-pink {
+    color: #f8f8f9;
+    background-color: #da0175;
+}
+
+.btn-form-login,
+.btn-form-register {
+    width: 16rem;
+    padding: 0.5rem 0;
+    margin: 3rem 0 1.5rem 0;
+
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    .btn-form-register {
+        margin: 0;
+    }
+}

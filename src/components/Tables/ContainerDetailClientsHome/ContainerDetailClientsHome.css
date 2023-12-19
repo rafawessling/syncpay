@@ -1,0 +1,18 @@
+.conteiner-tables-clients-home {
+    display: flex;
+    justify-content: space-between;
+
+    width: 87%;
+}
+
+@media (max-width: 1000px) {
+    .conteiner-tables-clients-home {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .conteiner-tables-clients-home {
+        width: 85vw;
+    }
+}

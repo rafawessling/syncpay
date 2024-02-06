@@ -17,6 +17,7 @@ function SuspenseMenuHeader() {
     };
 
     const handleLogoutUser = () => {
+        setShowSuspenseMenu(false);
         clear();
     };
 

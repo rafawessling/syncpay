@@ -1,4 +1,4 @@
-export const changeNameByOrder = clients => {
+export const sortClientsByName = clients => {
     return clients.sort((a, b) => {
         const nameA = a.name.toLowerCase();
         const nameB = b.name.toLowerCase();
@@ -7,7 +7,7 @@ export const changeNameByOrder = clients => {
     });
 };
 
-export const changeStatusByOrder = clients => {
+export const sortClientsByStatus = clients => {
     return clients.sort((a, b) => {
         const nameA = a.status.toString();
         const nameB = b.status.toString();

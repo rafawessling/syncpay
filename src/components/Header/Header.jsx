@@ -13,7 +13,7 @@ function Header({ title }) {
 
     const [initials, setInitials] = useState('');
 
-    useEffect(() => {
+    const getNameAndInitials = () => {
         const getName = getItem('userName');
 
         if (getName) {
@@ -31,6 +31,10 @@ function Header({ title }) {
                 setInitials(firstInitial);
             }
         }
+    }
+
+    useEffect(() => {
+        getNameAndInitials()
     }, [userName]);
 
     return (

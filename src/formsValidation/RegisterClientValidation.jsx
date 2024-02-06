@@ -7,9 +7,9 @@ export default async function RegisterClientValidation(name, email, phone, cpf, 
     if (!name) {
         errors.name = 'Name is required';
     } else if (!validator.isLength(name, { min: 3, max: 100 })) {
-        errors.name = 'Name must be between 3 and 100 characters and Name cannot contain special characters or numbers';
+        errors.name = 'Name must be between 3 and 100 characters and cannot contain special characters or numbers';
     } else if (!validator.isAlpha(name, 'pt-BR', { ignore: ' ' })) {
-        errors.name ='Name must be between 3 and 100 characters and Name cannot contain special characters or numbers';
+        errors.name = 'Name must be between 3 and 100 characters and cannot contain special characters or numbers';
     }
 
     if (!email) {

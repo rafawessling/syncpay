@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useDataContext } from '../../../context/DataContext';
 import { getItem } from '../../../utils/storage';
-import { changeNameByOrder, changeStatusByOrder } from '../../../utils/ChangeOrderClients';
+import { sortClientsByName, sortClientsByStatus } from '../../../utils/ChangeOrderClients';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import api from '../../../services/api';
 import SortIcon from '../../../assets/sort-icon.svg';
@@ -64,13 +64,13 @@ function ClientsTable({ status, setIsLoading, searchData }) {
     }, [reloadTable, setReloadTable, searchData]);
 
     const changeNameOrder = () => {
-        const sortedName = changeNameByOrder([...dataClients], sortOrder);
+        const sortedName = sortClientsByName([...dataClients], sortOrder);
         const orderedClients = sortOrder === 'asc' ? sortedName : sortedName.reverse();
         setDataClients(orderedClients);
         setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     };
     const changeStatusOrder = () => {
-        const sortedName = changeStatusByOrder([...dataClients], sortOrder);
+        const sortedName = sortClientsByStatus([...dataClients], sortOrder);
         const orderedClients = sortOrder === 'asc' ? sortedName : sortedName.reverse();
         setDataClients(orderedClients);
         setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');

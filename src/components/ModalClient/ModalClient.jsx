@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { useClientsContext } from '../../context/clientsContext.jsx';
 import { useModalWindowContext } from '../../context/ModalWindowContext.jsx';
 import { useDataContext } from '../../context/DataContext.jsx';
@@ -63,10 +63,6 @@ function ModalClient() {
         phoneNumber: '',
         cep: '',
     });
-
-    const cpfRef = useRef();
-    const phoneNumberRef = useRef();
-    const cepRef = useRef();
 
     const handleCepChange = async () => {
         if (cep) {
@@ -255,7 +251,6 @@ function ModalClient() {
                                 placeholder="Enter the CPF"
                                 value={cpf}
                                 onChange={handleChangeInputValue}
-                                ref={cpfRef}
                             />
                         </div>
                         <div
@@ -273,7 +268,6 @@ function ModalClient() {
                                 placeholder="Enter the phone number"
                                 value={phoneNumber}
                                 onChange={handleChangeInputValue}
-                                ref={phoneNumberRef}
                             />
                         </div>
                     </section>
@@ -297,7 +291,6 @@ function ModalClient() {
                                 value={cep}
                                 onChange={handleChangeInputValue}
                                 onBlur={handleCepChange}
-                                ref={cepRef}
                             />
                         </div>
                         <div className="form-group-register small-input-register">
